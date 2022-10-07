@@ -1848,11 +1848,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1495889947503892, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1625832438174652, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1996530296785342, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
       propertyPath: m_IsActive
@@ -1988,7 +1988,7 @@ PrefabInstance:
     - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
         type: 3}
       propertyPath: _options.locationOptions.latitudeLongitude
-      value: 53,2402565, 6,53215275
+      value: 53.25806, 6.73778
       objectReference: {fileID: 0}
     - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
         type: 3}
@@ -6193,6 +6193,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617393314940405785, guid: 4c19a1828971c174391470bba23e456b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2617393314940405791, guid: 4c19a1828971c174391470bba23e456b,
         type: 3}
