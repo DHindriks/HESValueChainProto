@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class BusLine : MonoBehaviour
 {
-    [SerializeField] int BusNumber;
-    [SerializeField] Color LineColor;
+    public int BusNumber;
+    public Color LineColor;
     [SerializeField] List<BusStop> busStopsOnRoute;
+
+    public BusStorage LineStorage;
+
+    public BusStorage DefaultStorage;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +28,26 @@ public class BusLine : MonoBehaviour
 
         line.positionCount = StopPositions.Count;
         line.SetPositions(StopPositions.ToArray());
+
+        if (DefaultStorage)
+        {
+            SetStorage(DefaultStorage);
+        }else
+        {
+            Debug.LogError("NO default storage for this line");
+        }
+       
+    }
+
+    public void SetStorage(BusStorage NewStorage)
+    {
+        if (LineStorage)
+        {
+            LineStorage.StoredLines.Remove(this);
+        }
+
+        LineStorage = NewStorage;
+        LineStorage.StoredLines.Add(this);
 
     }
 

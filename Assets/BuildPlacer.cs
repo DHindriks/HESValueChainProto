@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class BuildPlacer : MonoBehaviour
 {
-    [SerializeField] LayerMask mask; //TODO: fix mask not working
+    [SerializeField] LayerMask mask;
+
     // Update is called once per frame
     void Update()
     {
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, mask))
+        if (Physics.Raycast(ray, out hit, 1000, mask))
         {
             transform.position = hit.point;
         }
