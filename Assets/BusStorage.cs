@@ -16,7 +16,7 @@ public class BusStorage : MonoBehaviour
     //Stat variables
     public List<BusLine> StoredLines;
 
-    [SerializeField] string BuildingName;
+    public string BuildingName;
 
     [SerializeField] int HydrogenPumps;
 
@@ -51,6 +51,7 @@ public class BusStorage : MonoBehaviour
             GameObject icon = Instantiate(LineIconPrefab, LinesStoredWindow.transform);
             icon.GetComponent<RawImage>().color = line.LineColor;
             icon.GetComponentInChildren<TextMeshProUGUI>().text = line.BusNumber.ToString();
+            icon.GetComponent<Button>().onClick.AddListener(delegate{ line.OpenUI(); });
         }
     }
 

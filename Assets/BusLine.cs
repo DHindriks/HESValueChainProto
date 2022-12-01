@@ -12,6 +12,10 @@ public class BusLine : MonoBehaviour
 
     public BusStorage DefaultStorage;
 
+    public FuelTypes Fueltype;
+
+    [SerializeField] GameObject LineConfigMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,9 +55,8 @@ public class BusLine : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OpenUI()
     {
-
+        LineConfigMenu.SetActive(true);
     }
 }

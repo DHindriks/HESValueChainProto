@@ -10,3 +10,10 @@ public class BuildManager : MonoBehaviour
     }
 
 }
+
+public enum FuelTypes
+{
+    Diesel,
+    Elektrisch,
+    Waterstof
+}
