@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PriceManager : MonoBehaviour
 {
+    public static PriceManager Instance;
+
     //Default prices
     //BUILDCOSTS
    public float BusPriceFossil;
@@ -33,5 +35,25 @@ public class PriceManager : MonoBehaviour
     public float ElectricBusMaintenance;
 
     public float HydrogenBusMaintenance;
+
+
+
+    //TotalCosts Tracker
+    [HideInInspector] public int BusstoragesBought;
+
+
+    float TotalCosts;
+
+    void Start()
+    {
+        Instance = this;
+    }
+
+    public float GetTotalCosts()
+    {
+        TotalCosts = (BusstoragesBought * BusStoragePrice);
+
+        return TotalCosts;
+    }
 
 }

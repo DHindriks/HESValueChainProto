@@ -29,6 +29,11 @@ public class BusStorage : MonoBehaviour
             canvas.gameObject.SetActive(false);
         }
 
+        if (GetComponent<BuildPlacer>())
+        {
+            GetComponent<BuildPlacer>().BuildPlaced.AddListener(delegate { BuyStorage(); });
+        }
+
         SetName(BuildingName);
 
     }
@@ -61,6 +66,12 @@ public class BusStorage : MonoBehaviour
         {
             OpenBuildingUI();
         }
+    }
+
+    void BuyStorage()
+    {
+        PriceManager.Instance.BusstoragesBought++;
+        Debug.Log(PriceManager.Instance.GetTotalCosts());
     }
 
     void OpenBuildingUI()

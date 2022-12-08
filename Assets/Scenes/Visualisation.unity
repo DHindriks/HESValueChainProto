@@ -337,7 +337,7 @@ MonoBehaviour:
   BusPriceFossil: 0
   BusPriceElectric: 0
   BusPriceHydrogen: 0
-  BusStoragePrice: 0
+  BusStoragePrice: 10000
   HydroPumpPrice: 0
   HydroPipelinePrice: 0
   FossilFuelPrice: 0
@@ -346,6 +346,7 @@ MonoBehaviour:
   FossilBusMaintenance: 0
   ElectricBusMaintenance: 0
   HydrogenBusMaintenance: 0
+  BusstoragesBought: 0
 --- !u!1001 &346440213
 PrefabInstance:
   m_ObjectHideFlags: 0
