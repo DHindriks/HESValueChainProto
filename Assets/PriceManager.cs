@@ -8,33 +8,33 @@ public class PriceManager : MonoBehaviour
 
     //Default prices
     //BUILDCOSTS
-   public float BusPriceFossil;
+   public PriceScriptableObject BusPriceFossil;
 
-   public float BusPriceElectric;
+   public PriceScriptableObject BusPriceElectric;
 
-   public float BusPriceHydrogen;
+   public PriceScriptableObject BusPriceHydrogen;
 
-   public float BusStoragePrice;
+   public PriceScriptableObject BusStoragePrice;
 
-   public float HydroPumpPrice;
+   public PriceScriptableObject HydroPumpPrice;
 
-   public float HydroPipelinePrice;
+   public PriceScriptableObject HydroPipelinePrice;
 
 
 
     //FUEL COSTS
-   public float FossilFuelPrice;
+   public PriceScriptableObject FossilFuelPrice;
 
-   public float ElectricPrice;
+   public PriceScriptableObject ElectricPrice;
 
-   public float HydrogenPrice;
+   public PriceScriptableObject HydrogenPrice;
 
     //Maintenance/Recurring costs
-    public float FossilBusMaintenance;
+    public PriceScriptableObject FossilBusMaintenance;
 
-    public float ElectricBusMaintenance;
+    public PriceScriptableObject ElectricBusMaintenance;
 
-    public float HydrogenBusMaintenance;
+    public PriceScriptableObject HydrogenBusMaintenance;
 
 
 
@@ -51,7 +51,7 @@ public class PriceManager : MonoBehaviour
 
     public float GetTotalCosts()
     {
-        TotalCosts = (BusstoragesBought * BusStoragePrice);
+        TotalCosts = (BusstoragesBought * BusStoragePrice.Value);
 
         return TotalCosts;
     }
