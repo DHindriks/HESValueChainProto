@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PriceManager : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class PriceManager : MonoBehaviour
 
 
     float TotalCosts;
+    [SerializeField] TextMeshProUGUI TotalPriceTXT;
 
     void Start()
     {
@@ -52,6 +54,8 @@ public class PriceManager : MonoBehaviour
     public float GetTotalCosts()
     {
         TotalCosts = (BusstoragesBought * BusStoragePrice.Value);
+
+        TotalPriceTXT.text = "Totale Kosten: €" + TotalCosts.ToString();
 
         return TotalCosts;
     }
