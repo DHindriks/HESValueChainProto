@@ -16,11 +16,13 @@ public class BusLine : MonoBehaviour
 
     [SerializeField] GameObject LineConfigMenu;
 
+    LineRenderer line;
+
     // Start is called before the first frame update
     void Start()
     {
-        LineRenderer line = GetComponent<LineRenderer>();
         List<Vector3> StopPositions = new List<Vector3>();
+        line = GetComponent<LineRenderer>();
         line.startColor = LineColor;
         line.endColor = LineColor;
 
@@ -41,6 +43,11 @@ public class BusLine : MonoBehaviour
             Debug.LogError("NO default storage for this line");
         }
        
+    }
+
+    public void ChangeFuelType(FuelTypes type)
+    {
+        Fueltype = type;
     }
 
     public void SetStorage(BusStorage NewStorage)

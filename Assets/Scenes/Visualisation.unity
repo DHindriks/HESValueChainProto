@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -21116,11 +21116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BusNumber: 1
   LineColor: {r: 0, g: 0, b: 1, a: 1}
-  busStopsOnRoute:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 1388504369}
+  busStopsOnRoute: []
   LineStorage: {fileID: 0}
   DefaultStorage: {fileID: 1457628719}
   Fueltype: 0
@@ -21143,7 +21139,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 34a2b25d42269d647ad6cc50132cba9a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23212,18 +23208,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1384045041}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1388504369 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 511843869365572614, guid: d9543cb762ac42f46b3cb256c2ebef31,
-    type: 3}
-  m_PrefabInstance: {fileID: 511843870728646967}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6a3af70938ca934c9bd97fee832dc07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1396559264
 PrefabInstance:
   m_ObjectHideFlags: 0
