@@ -62,7 +62,7 @@ public class BusStorage : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (!GetComponent<BuildPlacer>())
+        if (!GetComponent<BuildPlacer>() && !BuildManager.Instance.OpenMenu)
         {
             OpenBuildingUI();
         }
@@ -76,12 +76,14 @@ public class BusStorage : MonoBehaviour
 
     void OpenBuildingUI()
     {
+        BuildManager.Instance.OpenMenu = true;
         canvas.gameObject.SetActive(true);
         UpdateLineList();
     }
 
     public void CloseBuildingUI()
     {
+        BuildManager.Instance.OpenMenu = false;
         canvas.gameObject.SetActive(false);
     }
 }

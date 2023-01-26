@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BusLine : MonoBehaviour
 {
@@ -10,17 +11,38 @@ public class BusLine : MonoBehaviour
 
     [SerializeField] List<BusStop> busStopsOnRoute;
 
-    public BusStorage LineStorage;
 
     public BusStorage DefaultStorage;
 
-    public FuelTypes Fueltype;
 
     [SerializeField] GameObject LineConfigMenu;
 
     LineRenderer line;
 
     [HideInInspector] public BuslineManager Manager;
+    [Space(20), Tooltip("Line data values")]
+
+    public FuelTypes Fueltype;
+    public BusStorage LineStorage;
+    public int RidesPerWeek;
+    public float KMPerRide;
+    public float TotalKMPerWeek;
+    public float RequiredHydrogenKGPerWeek;
+    public float HydrogenCostsPerWeek;
+    public float RequiredKWHForHydrogen;
+    public float GramCO2EmissionsGreenHydrogenPerKM;
+    public float GramCO2EmissionsGreyHydrogenPerKM;
+    public float GramCO2EmissionsDieselPerKM;
+
+    public TextMeshProUGUI RidesPerWeekUI;
+    public TextMeshProUGUI KMPerRideUI;
+    public TextMeshProUGUI TotalKMPerWeekUI;
+    public TextMeshProUGUI RequiredHydrogenKGPerWeekUI;
+    public TextMeshProUGUI HydrogenCostsPerWeekUI;
+    public TextMeshProUGUI RequiredKWHForHydrogenUI;
+    public TextMeshProUGUI GramCO2EmissionsGreenHydrogenPerKMUI;
+    public TextMeshProUGUI GramCO2EmissionsGreyHydrogenPerKMUI;
+    public TextMeshProUGUI GramCO2EmissionsDieselPerKMUI;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +54,7 @@ public class BusLine : MonoBehaviour
         foreach (BusStop stop in busStopsOnRoute) 
         {
             StopPositions.Add(stop.transform.position);
+            stop.StoredLines.Add(this);
         }
 
 
@@ -43,7 +66,7 @@ public class BusLine : MonoBehaviour
             SetStorage(DefaultStorage);
         }else
         {
-            Debug.LogError("NO default storage for this line");
+            Debug.LogError("No default storage for this line");
         }
        
     }
@@ -53,6 +76,21 @@ public class BusLine : MonoBehaviour
         Fueltype = type;
 
         RefreshDisplay();
+    }
+
+    public void RefreshUI()
+    {
+        RidesPerWeekUI.text = "Aantal ritten per week: " + RidesPerWeek;
+        KMPerRideUI.text = "Kilometer per rit: " + KMPerRide;
+        TotalKMPerWeekUI.text = "Totale kilometers per week: " + TotalKMPerWeek;
+        RequiredHydrogenKGPerWeekUI.text = "Benodigde hoeveelheid waterstof: " + RequiredHydrogenKGPerWeek + " KG";
+        HydrogenCostsPerWeekUI.text = "Kosten waterstof per week: " + "€" + HydrogenCostsPerWeek;
+        RequiredKWHForHydrogenUI.text = "Benodigde kilowattuur: " + RequiredKWHForHydrogen;
+        GramCO2EmissionsGreenHydrogenPerKMUI.text = "Uitstoot groene waterstof per kilometer: " + GramCO2EmissionsGreenHydrogenPerKM + " gram";
+        GramCO2EmissionsGreyHydrogenPerKMUI.text = "Uitstoot grijze waterstof per kilometer: " + GramCO2EmissionsGreyHydrogenPerKM + " gram";
+        GramCO2EmissionsDieselPerKMUI.text = "Uitstoot diesel per kilometer: " + GramCO2EmissionsDieselPerKM + " gram";
+
+
     }
 
     public void RefreshDisplay()
@@ -102,6 +140,8 @@ public class BusLine : MonoBehaviour
                 line.endColor = LineColor;
                 break;
         }
+
+        RefreshUI();
 
     }
 
