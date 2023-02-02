@@ -71,7 +71,7 @@ public class BusLine : MonoBehaviour
        
     }
 
-    void CalculateStats()
+    public void CalculateStats()
     {
         TotalKMPerWeek = RidesPerWeek * KMPerRide;
         RequiredHydrogenKGPerWeek = TotalKMPerWeek * PriceManager.Instance.KGHydrogenNeeded.Value;

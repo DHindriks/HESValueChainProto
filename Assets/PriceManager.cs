@@ -64,12 +64,14 @@ public class PriceManager : MonoBehaviour
         return TotalCosts;
     }
 
-    public float GetTotalEmissions()
+    public void GetTotalEmissions()
     {
         TotalEmissions = 0;
 
         foreach (BusLine line in buslineManager.Buslines)
         {
+            line.CalculateStats();
+
             switch(line.Fueltype)
             {
                 case FuelTypes.Waterstof:
@@ -87,7 +89,7 @@ public class PriceManager : MonoBehaviour
         }
 
         EmissionsTXT.text = "Totale uitstoot: " + TotalEmissions + " KG CO2 per week";
-        return TotalEmissions;
+        Debug.Log("REFRESH");
     }
 
 }

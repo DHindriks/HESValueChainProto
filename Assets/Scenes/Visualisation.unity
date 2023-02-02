@@ -2848,6 +2848,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 305773347}
+        m_MethodName: GetTotalEmissions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4531,6 +4542,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
+      propertyPath: Fueltype
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -23088,6 +23104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
+      propertyPath: Fueltype
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
       propertyPath: BusNumber
       value: 4
       objectReference: {fileID: 0}
@@ -26170,6 +26191,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
+      propertyPath: Fueltype
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -35387,6 +35413,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
+      propertyPath: Fueltype
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
       propertyPath: BusNumber
       value: 2
       objectReference: {fileID: 0}
@@ -44405,7 +44436,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: Fueltype
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -63133,6 +63164,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
+      propertyPath: Fueltype
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}

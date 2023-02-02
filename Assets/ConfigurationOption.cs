@@ -8,6 +8,7 @@ public class ConfigurationOption : MonoBehaviour
     [SerializeField] PriceScriptableObject Value;
     [SerializeField] TMP_InputField InputField;
 
+
     // Start is called before the first frame update
     void Start()
     {

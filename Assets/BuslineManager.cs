@@ -53,6 +53,12 @@ public class BuslineManager : MonoBehaviour
                 break;
         }
 
+        RefreshLines();
+
+    }
+
+    public void RefreshLines()
+    {
         foreach (BusLine line in Buslines)
         {
             line.RefreshDisplay();
