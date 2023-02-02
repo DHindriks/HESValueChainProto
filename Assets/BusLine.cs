@@ -78,8 +78,8 @@ public class BusLine : MonoBehaviour
         HydrogenCostsPerWeek = RequiredHydrogenKGPerWeek * PriceManager.Instance.HydrogenPrice.Value;
         RequiredKWHForHydrogen = RequiredHydrogenKGPerWeek * PriceManager.Instance.KWHNeededPerKGHydro.Value;
         KGCO2EmissionsDieselPerKM = TotalKMPerWeek * PriceManager.Instance.KGDieselEmmissionPerKM.Value;
-        KGCO2EmissionsGreenHydrogenPerKM = TotalKMPerWeek * PriceManager.Instance.KGGreenHydroEmmissionPerKM.Value;
-        KGCO2EmissionsGreyHydrogenPerKM = TotalKMPerWeek * PriceManager.Instance.KGGreyHydroEmmissionPerKM.Value;
+        KGCO2EmissionsGreenHydrogenPerKM = (TotalKMPerWeek * PriceManager.Instance.KGHydrogenNeeded.Value) * PriceManager.Instance.KGGreenHydroEmmissionPerKM.Value;
+        KGCO2EmissionsGreyHydrogenPerKM = (TotalKMPerWeek * PriceManager.Instance.KGHydrogenNeeded.Value) * PriceManager.Instance.KGGreyHydroEmmissionPerKM.Value;
     }
 
     public void ChangeFuelType(FuelTypes type)
