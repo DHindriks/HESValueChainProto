@@ -33,6 +33,7 @@ public class BuslineManager : MonoBehaviour
         {
             line.Manager = this;
         }
+
     }
 
     public void SetNewOption()

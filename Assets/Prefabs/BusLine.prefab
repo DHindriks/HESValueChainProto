@@ -2022,18 +2022,18 @@ MonoBehaviour:
   RequiredHydrogenKGPerWeek: 0
   HydrogenCostsPerWeek: 0
   RequiredKWHForHydrogen: 0
-  GramCO2EmissionsGreenHydrogenPerKM: 0
-  GramCO2EmissionsGreyHydrogenPerKM: 0
-  GramCO2EmissionsDieselPerKM: 0
-  RidesPerWeekUI: {fileID: 6825128309638283744}
+  KGCO2EmissionsGreenHydrogenPerKM: 0
+  KGCO2EmissionsGreyHydrogenPerKM: 0
+  KGCO2EmissionsDieselPerKM: 0
+  RidesPerWeekUI: {fileID: 8623271319038303747}
   KMPerRideUI: {fileID: 6825128309638283744}
   TotalKMPerWeekUI: {fileID: 851195514224363624}
   RequiredHydrogenKGPerWeekUI: {fileID: 1603651982312422977}
   HydrogenCostsPerWeekUI: {fileID: 2695829618104469935}
   RequiredKWHForHydrogenUI: {fileID: 3215440113854148217}
-  GramCO2EmissionsGreenHydrogenPerKMUI: {fileID: 3478793988254081738}
-  GramCO2EmissionsGreyHydrogenPerKMUI: {fileID: 5038931023467319815}
-  GramCO2EmissionsDieselPerKMUI: {fileID: 3901162509173661518}
+  KGCO2EmissionsGreenHydrogenPerKMUI: {fileID: 3478793988254081738}
+  KGCO2EmissionsGreyHydrogenPerKMUI: {fileID: 5038931023467319815}
+  KGCO2EmissionsDieselPerKMUI: {fileID: 3901162509173661518}
 --- !u!120 &5619333597512174786
 LineRenderer:
   m_ObjectHideFlags: 0

@@ -30,9 +30,9 @@ public class BusLine : MonoBehaviour
     public float RequiredHydrogenKGPerWeek;
     public float HydrogenCostsPerWeek;
     public float RequiredKWHForHydrogen;
-    public float GramCO2EmissionsGreenHydrogenPerKM;
-    public float GramCO2EmissionsGreyHydrogenPerKM;
-    public float GramCO2EmissionsDieselPerKM;
+    public float KGCO2EmissionsGreenHydrogenPerKM;
+    public float KGCO2EmissionsGreyHydrogenPerKM;
+    public float KGCO2EmissionsDieselPerKM;
 
     public TextMeshProUGUI RidesPerWeekUI;
     public TextMeshProUGUI KMPerRideUI;
@@ -40,9 +40,9 @@ public class BusLine : MonoBehaviour
     public TextMeshProUGUI RequiredHydrogenKGPerWeekUI;
     public TextMeshProUGUI HydrogenCostsPerWeekUI;
     public TextMeshProUGUI RequiredKWHForHydrogenUI;
-    public TextMeshProUGUI GramCO2EmissionsGreenHydrogenPerKMUI;
-    public TextMeshProUGUI GramCO2EmissionsGreyHydrogenPerKMUI;
-    public TextMeshProUGUI GramCO2EmissionsDieselPerKMUI;
+    public TextMeshProUGUI KGCO2EmissionsGreenHydrogenPerKMUI;
+    public TextMeshProUGUI KGCO2EmissionsGreyHydrogenPerKMUI;
+    public TextMeshProUGUI KGCO2EmissionsDieselPerKMUI;
 
     // Start is called before the first frame update
     void Start()
@@ -71,9 +71,21 @@ public class BusLine : MonoBehaviour
        
     }
 
+    void CalculateStats()
+    {
+        TotalKMPerWeek = RidesPerWeek * KMPerRide;
+        RequiredHydrogenKGPerWeek = TotalKMPerWeek * PriceManager.Instance.KGHydrogenNeeded.Value;
+        HydrogenCostsPerWeek = RequiredHydrogenKGPerWeek * PriceManager.Instance.HydrogenPrice.Value;
+        RequiredKWHForHydrogen = RequiredHydrogenKGPerWeek * PriceManager.Instance.KWHNeededPerKGHydro.Value;
+        KGCO2EmissionsDieselPerKM = TotalKMPerWeek * PriceManager.Instance.KGDieselEmmissionPerKM.Value;
+        KGCO2EmissionsGreenHydrogenPerKM = TotalKMPerWeek * PriceManager.Instance.KGGreenHydroEmmissionPerKM.Value;
+        KGCO2EmissionsGreyHydrogenPerKM = TotalKMPerWeek * PriceManager.Instance.KGGreyHydroEmmissionPerKM.Value;
+    }
+
     public void ChangeFuelType(FuelTypes type)
     {
         Fueltype = type;
+        PriceManager.Instance.GetTotalEmissions();
 
         RefreshDisplay();
     }
@@ -86,15 +98,16 @@ public class BusLine : MonoBehaviour
         RequiredHydrogenKGPerWeekUI.text = "Benodigde hoeveelheid waterstof: " + RequiredHydrogenKGPerWeek + " KG";
         HydrogenCostsPerWeekUI.text = "Kosten waterstof per week: " + "€" + HydrogenCostsPerWeek;
         RequiredKWHForHydrogenUI.text = "Benodigde kilowattuur: " + RequiredKWHForHydrogen;
-        GramCO2EmissionsGreenHydrogenPerKMUI.text = "Uitstoot groene waterstof per kilometer: " + GramCO2EmissionsGreenHydrogenPerKM + " gram";
-        GramCO2EmissionsGreyHydrogenPerKMUI.text = "Uitstoot grijze waterstof per kilometer: " + GramCO2EmissionsGreyHydrogenPerKM + " gram";
-        GramCO2EmissionsDieselPerKMUI.text = "Uitstoot diesel per kilometer: " + GramCO2EmissionsDieselPerKM + " gram";
+        KGCO2EmissionsGreenHydrogenPerKMUI.text = "Uitstoot groene waterstof per kilometer: " + KGCO2EmissionsGreenHydrogenPerKM + " KG";
+        KGCO2EmissionsGreyHydrogenPerKMUI.text = "Uitstoot grijze waterstof per kilometer: " + KGCO2EmissionsGreyHydrogenPerKM + " KG";
+        KGCO2EmissionsDieselPerKMUI.text = "Uitstoot diesel per kilometer: " + KGCO2EmissionsDieselPerKM + " KG";
 
 
     }
 
     public void RefreshDisplay()
     {
+        CalculateStats();
 
         if (Fueltype == FuelTypes.Diesel)
         {

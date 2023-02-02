@@ -30,13 +30,15 @@ public class PriceManager : MonoBehaviour
 
    public PriceScriptableObject HydrogenPrice;
 
-    //Maintenance/Recurring costs
-    public PriceScriptableObject FossilBusMaintenance;
+    public PriceScriptableObject KGHydrogenNeeded;
+    public PriceScriptableObject KWHNeededPerKGHydro;
 
-    public PriceScriptableObject ElectricBusMaintenance;
-
-    public PriceScriptableObject HydrogenBusMaintenance;
-
+    //EMISSIONS
+    [SerializeField] BuslineManager buslineManager;
+    public PriceScriptableObject KGGreyHydroEmmissionPerKM;
+    public PriceScriptableObject KGGreenHydroEmmissionPerKM;
+    public PriceScriptableObject KGDieselEmmissionPerKM;
+    float TotalEmissions;
 
 
     //TotalCosts Tracker
@@ -45,10 +47,12 @@ public class PriceManager : MonoBehaviour
 
     float TotalCosts;
     [SerializeField] TextMeshProUGUI TotalPriceTXT;
+    [SerializeField] TextMeshProUGUI EmissionsTXT;
 
     void Start()
     {
         Instance = this;
+        Invoke("GetTotalEmissions", 0.1f);
     }
 
     public float GetTotalCosts()
@@ -58,6 +62,32 @@ public class PriceManager : MonoBehaviour
         TotalPriceTXT.text = "Totale Kosten: €" + TotalCosts.ToString();
 
         return TotalCosts;
+    }
+
+    public float GetTotalEmissions()
+    {
+        TotalEmissions = 0;
+
+        foreach (BusLine line in buslineManager.Buslines)
+        {
+            switch(line.Fueltype)
+            {
+                case FuelTypes.Waterstof:
+                    TotalEmissions += line.KGCO2EmissionsGreenHydrogenPerKM;
+                    break;
+
+                case FuelTypes.Elektrisch:
+                    TotalEmissions += line.KGCO2EmissionsGreenHydrogenPerKM;
+                    break;
+
+                case FuelTypes.Diesel:
+                    TotalEmissions += line.KGCO2EmissionsDieselPerKM;
+                    break;
+            }
+        }
+
+        EmissionsTXT.text = "Totale uitstoot: " + TotalEmissions + " KG CO2 per week";
+        return TotalEmissions;
     }
 
 }
