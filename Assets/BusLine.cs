@@ -98,9 +98,9 @@ public class BusLine : MonoBehaviour
         RequiredHydrogenKGPerWeekUI.text = "Benodigde hoeveelheid waterstof: " + RequiredHydrogenKGPerWeek + " KG";
         HydrogenCostsPerWeekUI.text = "Kosten waterstof per week: " + "€" + HydrogenCostsPerWeek;
         RequiredKWHForHydrogenUI.text = "Benodigde kilowattuur: " + RequiredKWHForHydrogen;
-        KGCO2EmissionsGreenHydrogenPerKMUI.text = "Uitstoot groene waterstof per kilometer: " + KGCO2EmissionsGreenHydrogenPerKM + " KG";
-        KGCO2EmissionsGreyHydrogenPerKMUI.text = "Uitstoot grijze waterstof per kilometer: " + KGCO2EmissionsGreyHydrogenPerKM + " KG";
-        KGCO2EmissionsDieselPerKMUI.text = "Uitstoot diesel per kilometer: " + KGCO2EmissionsDieselPerKM + " KG";
+        KGCO2EmissionsGreenHydrogenPerKMUI.text = "CO2 uitstoot groene waterstof per week: " + KGCO2EmissionsGreenHydrogenPerKM + " KG";
+        KGCO2EmissionsGreyHydrogenPerKMUI.text = "CO2 uitstoot grijze waterstof per week: " + KGCO2EmissionsGreyHydrogenPerKM + " KG";
+        KGCO2EmissionsDieselPerKMUI.text = "CO2 uitstoot diesel per week: " + KGCO2EmissionsDieselPerKM + " KG";
 
 
     }
