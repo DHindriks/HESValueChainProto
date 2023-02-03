@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4543,6 +4543,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174786, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: Fueltype
@@ -4592,7 +4597,7 @@ PrefabInstance:
         type: 3}
       propertyPath: LineConfigMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1745210606}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: busStopsOnRoute.Array.size
@@ -5699,6 +5704,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 511843869365572613, guid: d9543cb762ac42f46b3cb256c2ebef31,
     type: 3}
   m_PrefabInstance: {fileID: 161584267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &162007135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5619333597056614337, guid: 21608590b43e23e4ba52306272a23afb,
+    type: 3}
+  m_PrefabInstance: {fileID: 885024997}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &165936675
 PrefabInstance:
@@ -23102,6 +23113,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174786, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: Fueltype
@@ -23146,7 +23162,7 @@ PrefabInstance:
         type: 3}
       propertyPath: LineConfigMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1540393192}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: busStopsOnRoute.Array.size
@@ -26192,6 +26208,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174786, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: Fueltype
@@ -26241,7 +26262,7 @@ PrefabInstance:
         type: 3}
       propertyPath: LineConfigMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 162007135}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: busStopsOnRoute.Array.size
@@ -35411,6 +35432,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174786, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: Fueltype
@@ -35460,7 +35486,7 @@ PrefabInstance:
         type: 3}
       propertyPath: LineConfigMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1441163001}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: busStopsOnRoute.Array.size
@@ -43178,6 +43204,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1438558945}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1441163001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5619333597056614337, guid: 21608590b43e23e4ba52306272a23afb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1167573197}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1443380416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44046,6 +44078,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1472081466}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1474474764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5619333597056614337, guid: 21608590b43e23e4ba52306272a23afb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091953973}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1476724605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44433,6 +44471,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174786, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: Fueltype
@@ -44482,7 +44525,7 @@ PrefabInstance:
         type: 3}
       propertyPath: LineConfigMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1942086483}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: busStopsOnRoute.Array.size
@@ -46447,6 +46490,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 511843869365572613, guid: d9543cb762ac42f46b3cb256c2ebef31,
     type: 3}
   m_PrefabInstance: {fileID: 1540367410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1540393192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5619333597056614337, guid: 21608590b43e23e4ba52306272a23afb,
+    type: 3}
+  m_PrefabInstance: {fileID: 795202524}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1541158248
 PrefabInstance:
@@ -51741,6 +51790,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 511843869365572613, guid: d9543cb762ac42f46b3cb256c2ebef31,
     type: 3}
   m_PrefabInstance: {fileID: 1743090021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1745210606 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5619333597056614337, guid: 21608590b43e23e4ba52306272a23afb,
+    type: 3}
+  m_PrefabInstance: {fileID: 126388547}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1745435217
 PrefabInstance:
@@ -57125,6 +57180,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1933539265}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1942086483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5619333597056614337, guid: 21608590b43e23e4ba52306272a23afb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1478006829}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1942394332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60560,6 +60621,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174786, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: Fueltype
@@ -60609,7 +60675,7 @@ PrefabInstance:
         type: 3}
       propertyPath: LineConfigMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1474474764}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: busStopsOnRoute.Array.size
@@ -63165,6 +63231,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5619333597512174786, guid: 21608590b43e23e4ba52306272a23afb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: Fueltype
