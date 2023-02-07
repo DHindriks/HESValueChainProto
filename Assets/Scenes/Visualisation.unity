@@ -3059,7 +3059,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 8.6
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -3084,7 +3084,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -4077,7 +4077,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 18.2
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -4107,7 +4107,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 404
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -5809,7 +5809,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -5844,7 +5844,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 114
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -12518,7 +12518,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -12553,7 +12553,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -13459,8 +13459,8 @@ Transform:
   - {fileID: 885024998}
   - {fileID: 795202525}
   - {fileID: 126388548}
-  - {fileID: 2091953974}
   - {fileID: 1478006830}
+  - {fileID: 2091953974}
   - {fileID: 1072233385}
   - {fileID: 820091139}
   - {fileID: 589301786}
@@ -16437,7 +16437,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 40.9
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -16467,7 +16467,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 362
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -20623,7 +20623,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 37.7
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -20658,7 +20658,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -25765,7 +25765,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 22.6
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -25790,7 +25790,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 458
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -27721,7 +27721,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 37.7
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -27756,7 +27756,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -34209,7 +34209,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -34244,7 +34244,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -35523,7 +35523,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 10.6
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -35548,7 +35548,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 456
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -39540,7 +39540,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -39565,7 +39565,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 782
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -44272,7 +44272,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 28.6
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -44302,7 +44302,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 440
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -45396,7 +45396,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 824
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -48686,7 +48686,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _tileProvider
       value: 
-      objectReference: {fileID: 1824630025}
+      objectReference: {fileID: 0}
     - target: {fileID: 114478715909612932, guid: e6b749c6d877f4c19a5a5c3c0783d53b,
         type: 3}
       propertyPath: _options.locationOptions.zoom
@@ -48749,12 +48749,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6b749c6d877f4c19a5a5c3c0783d53b, type: 3}
---- !u!4 &1130752787 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4867834046800562, guid: e6b749c6d877f4c19a5a5c3c0783d53b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1130752786}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1131554738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52303,7 +52297,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 19.5
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -52338,7 +52332,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 332
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -54295,6 +54289,7 @@ GameObject:
   - component: {fileID: 1252713615}
   - component: {fileID: 1252713614}
   - component: {fileID: 1252713617}
+  - component: {fileID: 1252713618}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -54398,6 +54393,19 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1252713618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252713613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d68a86ae115a042a60217aa964a5cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragSpeed: 2
 --- !u!1001 &1254945778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62004,7 +62012,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174796, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174796, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -67275,7 +67283,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -67310,7 +67318,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -68413,7 +68421,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 22.7
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -68443,7 +68451,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 192
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -69528,7 +69536,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 37.8
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -69558,7 +69566,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -74339,7 +74347,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 44.3
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -74374,7 +74382,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -76123,49 +76131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a3af70938ca934c9bd97fee832dc07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1824630024
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1824630026}
-  - component: {fileID: 1824630025}
-  m_Layer: 0
-  m_Name: TileProvider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1824630025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824630024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7ff8ed3b76a4ee5a451d64a5393e3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1824630026
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824630024}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1130752787}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1826339689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79835,7 +79800,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 39.5
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -79870,7 +79835,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 414
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -82430,7 +82395,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: KMPerRide
-      value: 7.2
+      value: 36.4
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -82460,7 +82425,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: RidesPerWeek
-      value: 942
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174787, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
@@ -85451,7 +85416,7 @@ PrefabInstance:
     - target: {fileID: 5619333597512174796, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5619333597512174796, guid: 21608590b43e23e4ba52306272a23afb,
         type: 3}

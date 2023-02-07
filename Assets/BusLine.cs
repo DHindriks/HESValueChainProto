@@ -92,15 +92,15 @@ public class BusLine : MonoBehaviour
 
     public void RefreshUI()
     {
-        RidesPerWeekUI.text = "Aantal ritten per week: " + RidesPerWeek;
-        KMPerRideUI.text = "Kilometer per rit: " + KMPerRide;
-        TotalKMPerWeekUI.text = "Totale kilometers per week: " + TotalKMPerWeek;
-        RequiredHydrogenKGPerWeekUI.text = "Benodigde hoeveelheid waterstof: " + RequiredHydrogenKGPerWeek + " KG";
-        HydrogenCostsPerWeekUI.text = "Kosten waterstof per week: " + "€" + HydrogenCostsPerWeek;
-        RequiredKWHForHydrogenUI.text = "Benodigde kilowattuur: " + RequiredKWHForHydrogen;
-        KGCO2EmissionsGreenHydrogenPerKMUI.text = "CO2 uitstoot groene waterstof per week: " + KGCO2EmissionsGreenHydrogenPerKM + " KG";
-        KGCO2EmissionsGreyHydrogenPerKMUI.text = "CO2 uitstoot grijze waterstof per week: " + KGCO2EmissionsGreyHydrogenPerKM + " KG";
-        KGCO2EmissionsDieselPerKMUI.text = "CO2 uitstoot diesel per week: " + KGCO2EmissionsDieselPerKM + " KG";
+        RidesPerWeekUI.text = "Aantal ritten per week: " + Mathf.Floor(RidesPerWeek).ToString();
+        KMPerRideUI.text = "Kilometer per rit: " + Mathf.Floor(KMPerRide).ToString();
+        TotalKMPerWeekUI.text = "Totale kilometers per week: " + Mathf.Floor(TotalKMPerWeek).ToString();
+        RequiredHydrogenKGPerWeekUI.text = "Benodigde hoeveelheid waterstof: " + Mathf.Floor(RequiredHydrogenKGPerWeek).ToString() + " KG";
+        HydrogenCostsPerWeekUI.text = "Kosten waterstof per week: " + "€" + Mathf.Floor(HydrogenCostsPerWeek).ToString();
+        RequiredKWHForHydrogenUI.text = "Benodigde kilowattuur: " + Mathf.Floor(RequiredKWHForHydrogen).ToString();
+        KGCO2EmissionsGreenHydrogenPerKMUI.text = "CO2 uitstoot groene waterstof per week: " + Mathf.Floor(KGCO2EmissionsGreenHydrogenPerKM).ToString() + " KG";
+        KGCO2EmissionsGreyHydrogenPerKMUI.text = "CO2 uitstoot grijze waterstof per week: " + Mathf.Floor(KGCO2EmissionsGreyHydrogenPerKM).ToString() + " KG";
+        KGCO2EmissionsDieselPerKMUI.text = "CO2 uitstoot diesel per week: " + Mathf.Floor(KGCO2EmissionsDieselPerKM).ToString() + " KG";
 
 
     }
