@@ -44,6 +44,8 @@ public class BusLine : MonoBehaviour
     public TextMeshProUGUI KGCO2EmissionsGreyHydrogenPerKMUI;
     public TextMeshProUGUI KGCO2EmissionsDieselPerKMUI;
 
+    public TMP_Dropdown FueltypeUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -82,6 +84,24 @@ public class BusLine : MonoBehaviour
         KGCO2EmissionsGreyHydrogenPerKM = TotalKMPerWeek * PriceManager.Instance.KGGreyHydroEmmissionPerKM.Value;
     }
 
+    public void ChangeFuelTypeUI(TextMeshProUGUI dropdown)
+    {
+        switch(dropdown.text)
+        {
+            case "Diesel":
+                ChangeFuelType(FuelTypes.Diesel);
+                break;
+
+            case "Elektrisch":
+                ChangeFuelType(FuelTypes.Elektrisch);
+                break;
+
+            case "Waterstof":
+                ChangeFuelType(FuelTypes.Waterstof);
+                break;
+        }
+    }
+
     public void ChangeFuelType(FuelTypes type)
     {
         Fueltype = type;
@@ -102,6 +122,7 @@ public class BusLine : MonoBehaviour
         KGCO2EmissionsGreyHydrogenPerKMUI.text = "CO2 uitstoot grijze waterstof per week: " + Mathf.Floor(KGCO2EmissionsGreyHydrogenPerKM).ToString() + " KG";
         KGCO2EmissionsDieselPerKMUI.text = "CO2 uitstoot diesel per week: " + Mathf.Floor(KGCO2EmissionsDieselPerKM).ToString() + " KG";
 
+        FueltypeUI.SetValueWithoutNotify((int)Fueltype);
 
     }
 
